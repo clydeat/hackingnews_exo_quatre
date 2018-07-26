@@ -10,21 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_25_172106) do
+ActiveRecord::Schema.define(version: 2018_07_25_211214) do
 
   create_table "comments", force: :cascade do |t|
-    t.integer "parent_id"
+    t.integer "link_id"
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "parent_id"
+    t.index ["link_id"], name: "index_comments_on_link_id"
     t.index ["parent_id"], name: "index_comments_on_parent_id"
   end
 
   create_table "links", force: :cascade do |t|
+    t.integer "user_id"
     t.string "url"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_links_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

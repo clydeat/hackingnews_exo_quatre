@@ -1,37 +1,24 @@
 # README
 
---------------------------------------------------------------------------------------
-Application Hacking News
---------------------------------------------------------------------------------------
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Salut moussaillon tu vas bien?
+Things you may want to cover:
 
-Dans ce README il y a un exo d'une app rails d'un Hacking News, avec des models et des associations.
+* Ruby version
 
-Lancer l'appli : 
+* System dependencies
 
-Verifie ta version de Ruby : 5.2.1 !
+* Configuration
 
-Télécharge ou clone le repo
+* Database creation
 
-Place toi dans le dossier correspondant et fait depuis ton terminal bundle install
+* Database initialization
 
-Puis dans le dossier db ouvre le fichier sqlite pour voir les bases de données.
+* How to run the test suite
 
-----------------------------------------------------------------------------------------
-Contenu
-----------------------------------------------------------------------------------------
+* Services (job queues, cache servers, search engines, etc.)
 
+* Deployment instructions
 
-Les utilisateurs
-
-postent des liens
-
-qui peuvent être commentés
-
-à l'infini ;)
-
-Bon THP à toi moussaillon!
-
-
-
+* ...
